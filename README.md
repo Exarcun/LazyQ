@@ -1,6 +1,6 @@
 # LazyQ - Generatore di Domande per Studenti
 
-Un'applicazione desktop per generare automaticamente domande di studio da PDF e immagini utilizzando l'AI di OpenRouter.
+Un'applicazione desktop per generare automaticamente domande di studio da PDF e immagini utilizzando AI tramite OpenRouter.
 
 ## Caratteristiche
 
@@ -9,7 +9,7 @@ Un'applicazione desktop per generare automaticamente domande di studio da PDF e 
 - 🤖 Genera domande e risposte utilizzando modelli AI avanzati (GPT-4o e altri)
 - 💾 Salva domande e risposte in file di testo
 - 🎨 Interfaccia grafica intuitiva
-- 🔒 Le chiavi API sono salvate localmente
+
 
 ## Stili di Domande Disponibili
 
