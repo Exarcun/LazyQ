@@ -9,7 +9,7 @@ Un'applicazione desktop per generare automaticamente domande di studio da PDF e 
 - 🤖 Genera domande e risposte utilizzando modelli AI avanzati (GPT-4o e altri)
 - 💾 Salva domande e risposte in file di testo
 - 🎨 Interfaccia grafica intuitiva
-- 🔒 Le chiavi API sono salvate localmente in modo sicuro
+- 🔒 Le chiavi API sono salvate localmente
 
 ## Stili di Domande Disponibili
 
@@ -56,13 +56,16 @@ cd LazyQ---Genera-Domande-in-Base-Al-Contenuto-Fornito
 go install github.com/tc-hib/go-winres@latest
 
 # Genera i file di risorse Windows (icona)
+cd internal
 go-winres make --in winres.json
+cd ..
+move internal\rsrc_windows_*.syso .
 
 # Compila usando lo script di build
-.\build.bat
+.\internal\build.bat
 ```
 
-L'eseguibile sarà creato nella cartella `output/`.
+L'eseguibile `LazyQ.exe` sarà creato nella directory root del progetto.
 
 ## Utilizzo
 
@@ -120,11 +123,14 @@ Consulta https://openrouter.ai/models per l'elenco completo.
 ├── main.go              # Codice principale dell'applicazione
 ├── go.mod               # Dipendenze Go
 ├── go.sum               # Checksums delle dipendenze
-├── winres.json          # Configurazione icona Windows
-├── build.bat            # Script di build
-├── logoNoBackgorund.ico # Icona dell'applicazione
-├── logoNoBackgorund.png # Logo PNG
-└── README.md            # Questo file
+├── LazyQ.exe            # Eseguibile compilato (pronto all'uso!)
+├── README.md            # Questo file
+└── internal/            # Risorse di build
+    ├── build.bat        # Script di build
+    ├── winres.json      # Configurazione icona Windows
+    ├── logoNoBackgorund.ico  # Icona dell'applicazione
+    ├── logoNoBackgorund.png  # Logo PNG
+    └── logo.png         # Logo alternativo
 ```
 
 ## Licenza
