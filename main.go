@@ -25,7 +25,7 @@ import (
 	pdf "github.com/ledongthuc/pdf"
 )
 
-//go:embed logoNoBackgorund.png
+//go:embed internal/logoNoBackgorund.png
 var logoData []byte
 
 const (

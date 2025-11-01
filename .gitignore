@@ -1,5 +1,4 @@
-# Binaries
-*.exe
+# Binaries (except LazyQ.exe which we track)
 *.dll
 *.so
 *.dylib
@@ -15,9 +14,8 @@ go.work
 
 # Build output
 output/
-LazyQ.exe
 
-# Windows resource files (generated)
+# Windows resource files (generated) 
 rsrc_windows_*.syso
 
 # IDE
